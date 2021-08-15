@@ -1,0 +1,8 @@
+if __name__ == '__main__':
+    n = int(input())
+    arr = map(int, input().split())
+    arrsorted = sorted(arr)
+    for i in range(len(arrsorted)-2, -1, -1):
+        if arrsorted[i] != arrsorted[-1]:
+            print(arrsorted[i])
+            break
